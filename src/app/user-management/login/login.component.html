@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 header">
+            WorkFlow:To Do List
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-12 login">
+            <h3 class="heading">Login-Here:</h3>
+            <p class="para2">Need An Account?</p>
+            <a [routerLink]="['/signup']">Sign-Up!</a>
+            <p class="para">Email:</p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">
+                        <i class="fa fa-user-o"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="email" name="email" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <p class="para">Password:</p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">
+                        <i class="fa fa-key"></i>
+                    </span>
+                </div>
+                <input type="password" class="form-control" [(ngModel)]="textPassword" name="textPassword" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <button class="btn bg-success text-white" (click)=login()>Log-In</button>
+            <br>
+            <a [routerLink]="['/forgot']" style="font-weight: bold">Forgot Password?</a>
+            <br>
+            <a [routerLink]="['/delete']" style="font-weight:bold">Delete Account?</a>
+        </div>
+
+    </div>
+</div>

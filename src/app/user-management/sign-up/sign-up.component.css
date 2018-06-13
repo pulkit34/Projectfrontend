@@ -1,0 +1,30 @@
+.header{
+    background-color:#429bf4;
+    font-size:1.5em;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:white;
+    padding:6vh;
+    }
+
+.back{
+    margin:4vh;
+    font-family:Arial, Helvetica, sans-serif;
+}
+label{
+    font-weight:bold;
+    color:#429bf4;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.field{
+    margin-bottom:5vh;
+}
+.select{
+    width:150px;
+    margin-bottom:2%;
+    font-size:12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:Bold;
+}

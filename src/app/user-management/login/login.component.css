@@ -1,0 +1,27 @@
+.header{
+background-color:#0f7a1c;
+font-size:1.5em;
+font-family:Arial, Helvetica, sans-serif;
+text-align: center;
+color:white;
+padding:6vh;
+margin-bottom:3vh;
+}
+
+.heading{
+    color:#0f7a1c;
+    text-decoration: underline;
+}
+
+.para{
+    color:#0f7a1c;
+    font-size: 1.1em;
+}
+.para2{
+    display: inline-block;
+    color:#0f7a1c;
+    font-size: 1.1em;
+    margin:1%;
+    font-weight:bold;
+    background-color:gainsboro;
+}

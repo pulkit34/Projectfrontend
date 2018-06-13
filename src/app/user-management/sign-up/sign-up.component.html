@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+      
+        <div class="col-12 header">
+            WorkFlow:To Do List
+        </div>
+    </div>
+    <div class ="row">
+      <div class="col-12 back">
+        <span style="padding-right:1%;font-size:1.1em ;color:#429bf4;font-weight:bold;">Already Have An Account?</span>
+        <button class = "btn bg-primary text-white btn-md" [routerLink]="['/login']">
+         Login
+        </button>
+      </div>
+      <div class="col-12 field">
+        <form>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type ="email" [(ngModel)]="email" name="email" class="form-control" placeholder="Enter Your Email" required>
+            <small id ="help" class="form-text text-muted">We Will Never Share Your Email</small>
+          </div>
+          <div class="form-group">
+            <label for = "password">Password:</label>
+            <input type ="password" [(ngModel)]='textPassword' name ="textPassword" class="form-control" placeholder="Enter Your Password" required/>
+          </div>
+          <div class="form-group">
+            <label for ="firstName">First Name:</label>
+            <input type ="text" [(ngModel)]="firstName" name = "firstName" class="form-control" placeholder="Enter First-Name" required>
+          </div>
+          <div class="form-group">
+            <label for ="lastName">Last Name:</label>
+            <input type="text" class="form-control" [(ngModel)]="lastName" name="lastName" placeholder="Enter Your Last-Name" required>
+          </div>
+          <div class="form-group">
+                                       
+            <label for ="mobileNumber">Phone:</label>
+            <br>
+            <select class="select"[(ngModel)]="countryCode" name = "countryCode">
+                <option *ngFor ="let y of codes">
+                  {{y.name}} ({{y.code}})
+                </option>
+                </select>
+            <input type="text" class="form-control" [(ngModel)]="mobileNumber" name ="mobileNumber" placeholder="Enter Mobile Number" required>
+          </div>
+         
+        </form>
+        <button class='btn bg-primary text-white' (click)=signup()>Sign-Up</button>
+      </div>
+    </div>
+  </div>

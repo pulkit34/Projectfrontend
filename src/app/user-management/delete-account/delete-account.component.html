@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+      <div class="col-12 header">
+          WorkFlow:To Do List
+      </div>
+      <div class="col-12">
+        <span class="back">Go Back =></span>
+        <button [routerLink]="['/signup']" id="button" class="btn bg-light">Sign-Up</button>
+        <button  [routerLink]="['/login']"  class="btn bg-light ">Login</button>
+      </div>
+
+
+      <div class="col-12 field">
+        <form>
+          <div class="form-group">
+            <label for="email">
+              Enter Your Unique UserID:
+            </label>
+            <input type ="text" [(ngModel)]="userID"  name = "userID" class="form-control" placeholder="Your UserID">
+          </div>
+          <button class="btn bg-light" (click)=deleteAccount()>Delete Account</button>
+        </form>
+      </div>
+  </div>
+
+  </div>
